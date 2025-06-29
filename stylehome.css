@@ -1,0 +1,141 @@
+        body {
+            margin: 0;
+            height: 300vh;
+            width: 100vw;
+            background: linear-gradient(to right,#2c0205,#000000) ;
+            box-sizing: border-box;
+        }
+
+        .head {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(images/Bull-logo.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar {
+            align-self: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            color: #810913;
+            width: 100vw;
+            height: 6vw;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .navbar #logoimg {
+            height: 5vw;
+        }
+
+        .navbar #name {
+            display: inline;
+            margin: 0;
+            padding: 0 0.9vw;
+            font-family: "Bebas Neue", serif;
+            font-weight: bold;
+            font-size: clamp(1rem, 2vw, 2.2rem);
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            padding: 0px 2.2vw;
+            color: #810913;
+            font-family: "Varela Round", sans-serif;
+            font-size: clamp(5px, 1.5vw, 2rem);
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            color: #ffffff;
+        }
+
+        .navbar #menuimg1 {
+            max-width: 100%;
+            width: 2.5vw;
+        }
+
+        #menuimg1:hover {
+            /* border: 0.1em solid #810913; */
+        }
+
+        #head-main {
+            margin: 0;
+            color: rgb(234, 143, 8);
+            font-family: "Bebas Neue", sans-serif;
+            font-size: clamp(1rem, 5vw, 5rem);
+            font-weight: bold;
+
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        #mit1 {
+            width: clamp(1px, 2vw, 27px);
+        }
+
+        .content {
+            color: #e3d5d5;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #highhead {
+            /* padding-left: 3vw; */
+            text-align: center;
+            font-size: clamp(1rem, 3vw, 50px);
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        .boxes {
+            display: flex;
+            flex: row wrap;
+            justify-content: space-evenly;
+            /* justify-content: space-between; */
+            /* padding-left: 3vw; */
+            /* align-items: center; */
+            /* height: 70vh; */
+            /* width: 90vw; */
+        }
+
+        .boxes div {
+            margin: 0;
+            /* background-color: #ffffff; */
+            /* border: 0.1em solid #810913; */
+
+        }
+
+        .boxes img {
+            width: 28vw;
+        }
+
+        .boxes p {
+            margin: 0;
+            text-align: left;
+            width: 28vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: clamp(5px,2.5rem,15px);
+        }
