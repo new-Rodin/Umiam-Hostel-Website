@@ -14,7 +14,7 @@
             content: "";
             position: absolute;
             z-index: -1;
-            opacity: 0.7;
+            opacity: 0.5;
             width: 100vw;
             height: 100vh;
         }
@@ -35,7 +35,7 @@
             align-items: center;
             color: #ffffff;
             width: 100vw;
-            padding: 0.2%;
+            /* padding: 0.2%; This was causing an extra 0.2vw width in the entire screen causing a scroll bar to appear at the bottom*/
             background: linear-gradient(to left, #620c12, #000000);
         }
 
@@ -126,7 +126,7 @@
         .boxes {
             display: flex;
             flex: row wrap;
-            justify-content: space-evenly;
+            justify-content: space-around;
             /* The below and padding left for #highhead is given if we want to use a different way of layout for the featured highlights */
             /* justify-content: space-between; */
             /* padding-left: 3vw; */
@@ -152,6 +152,7 @@
 
         .boxes img {
             width: 28vw;
+            border-radius: 20px;
         }
 
         .boxes p {
