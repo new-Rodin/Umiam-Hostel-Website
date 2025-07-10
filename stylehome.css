@@ -1,9 +1,11 @@
         body {
             margin: 0;
-            height: 300vh;
+            display:flex;
+            flex-direction: column;
             background: linear-gradient(to left, #620c12, #000000);
             width: 100vw;
             box-sizing: border-box;
+            color: #ffffff;
         }
 
         header::before {
@@ -16,14 +18,14 @@
             z-index: -1;
             opacity: 0.7;
             width: 100vw;
-            height: 100vh;
+            height: 702.4px;
         }
 
         .header {
             display: flex;
             flex-direction: column;
             width: 100vw;
-            height: 100vh;
+            height: 702.4px;
             align-items: center;
             justify-content: space-between;
         }
@@ -49,7 +51,7 @@
             padding: 0 0.9vw;
             font-family: "Bebas Neue", serif;
             font-weight: bold;
-            font-size: clamp(0.8rem, 2vw, 2.2rem);
+            font-size: 2rem;
         }
 
         .navbar li {
@@ -63,12 +65,12 @@
             margin: 0px 2.2vw;
             color: #ffffff;
             font-family: "Outfit", sans-serif;
-            font-size: clamp(11px, 1.5vw, 2rem);
+            font-size: 1.5rem;
             font-weight: 400;
             text-decoration: none;
         }
 
-        .navbar a:hover {
+        a:hover {
             color: rgb(234, 143, 8);
         }
 
@@ -87,7 +89,7 @@
             margin: 0;
             color: rgb(234, 143, 8);
             font-family: "Bebas Neue", sans-serif;
-            font-size: clamp(1rem, 5vw, 5rem);
+            font-size: 5rem;
             font-weight: bold;
 
         }
@@ -111,7 +113,7 @@
 
         .content {
             color: #ffffff;
-            height: 100vh;
+            margin-bottom: 20px;
             width: 100vw;
         }
 
@@ -120,7 +122,7 @@
             text-align: center;
             font-size: 3.5rem;
             font-family: "Bebas Neue", sans-serif;
-            margin-bottom: 20px;
+            padding: 20px 0px;
         }
 
         .boxes {
@@ -139,18 +141,18 @@
         .boxes div {
             opacity: 0.6;
             margin: 0;
+            width: 32vw;
             padding: 1%;
-            width: 480px;
             border-radius: 10px;
-            background-color: #383030;
+            background-color: #372525;
             transition: all 0.3s ease-in;
         }
-
+        
         .boxes div:hover {
             opacity: 1;
             transform: translateY(-0.6rem);
         }
-
+        
         .boxes img {
             border-radius: 20px;
         }
@@ -159,16 +161,58 @@
             margin: 0;
             text-align: left;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: clamp(3px, 1rem, 100px);
+            font-size: clamp(0.8rem,1vw,1.1rem);
         }
-
-        @media (max-width:700px) {
+        
+        footer
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 60px auto 80px;
+            grid-gap: 20px;
+            background-color: rgba(120, 76, 76, 0.608);
+            row-gap: px;
+        }
+        footer h2{
+            color: rgba(128, 128, 128);
+            font-size: 30px;
+            font-family:"Outfit", sans-serif;
+        }
+        .end{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .end h2{
+            font-size: 1.2rem;
+        }
+        
+        .end li{
+            display: inline;
+            margin:15px ;
+        }
+        @media(max-width:700px)
+        {
             .boxes {
                 flex-direction: column;
             }
-
+    
             .boxes div {
                 width: 100vw;
-                margin: 1rem 0rem;
+                margin-bottom: 1rem;
             }
+            .navbar #name
+            {
+                font-size: 1rem;
+           }
+           .navbar a{
+            font-size: 1rem;
+           }
+           #head-main{
+            font-size: 3rem;
+           }
+           #highhead{
+            font-size: 2rem;
+           }
         }
